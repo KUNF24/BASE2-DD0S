@@ -32,8 +32,8 @@ print("\033[95m        @         @  @      @         @   @        @     @    \03
 print("\033[94m        @         @  @       @       @   @         @   @      \033[0m")
 print("\033[94m        @ @ @ @ @    @        @     @    @         @ @        \033[0m")
 print("\033[31m        @         @  @         @   @     @         @   @      \033[0m")   
-print("\033[94m        @         @  @          @ @       @        @     @    \033[0m")
-print("\033[94m        @ @ @ @ @    @ @ @ @ @   @          @ @ @  @       @  \033[0m")
+print("\033[31m        @         @  @          @ @       @        @     @    \033[0m")
+print("\033[31m        @ @ @ @ @    @ @ @ @ @   @          @ @ @  @       @  \033[0m")
 print("")     
 print("\033[91m        @ @ @      @ @    @     @  @ @ @ @  @ @ @ @  @ @ @    \033[0m")
 print("\033[91m              @  @     @  @ @   @     @     @        @     @  \033[0m")
@@ -41,7 +41,8 @@ print("\033[93m        @ @ @    @ @ @ @  @   @ @     @     @ @ @    @ @ @    \03
 print("\033[93m        @        @     @  @     @     @     @ @ @ @  @     @  \033[0m")
 print("")
 print("\033[94m_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—\033[0m")
-print("\033[94m                                                                ||\033[0m")
+print("\033[4m             ANTI RACIST ANTI TERRORIST ANTI OPPRESSION          \033[0m")
+print("\033[94m—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_
 while attemps < 100:
     username = input('\033[33mEnter your username: \033[0m')
     password = input('\033[94mEnter your password: \033[0m')
@@ -117,7 +118,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +  "\033[91mRequest Sent  ::::....  " +ip+ " \033[0m")
+			print(i +  "\033[91mRequest Sent :::..  " +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[+] Error!")

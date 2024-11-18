@@ -27,10 +27,6 @@ os.system("clear")
         @        @     @  @     @     @     @ @ @ @  @     @
    °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 """
-
-
-attemps = 0
-
 while attemps < 100:
     username = input('Enter your username: ')
     password = input('Enter your password: ')

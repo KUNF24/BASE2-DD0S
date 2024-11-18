@@ -6,22 +6,7 @@ import threading
 import os
 import sys
 import time
-os.system("clear")
-
-
-attemps = 0
-
-while attemps < 100:
-    username = input('Enter your username: ')
-    password = input('Enter your password: ')
-
-    if username == 'n0l' and password == 'n0l':
-        print('You have successfully logged in Welcome to BLACKPANTHER!!')
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
+import fade
 os.system("clear")
 logo = """
         @ @ @ @ @    @     @ @ @ @ @ @ @    @ @ @  @       @
@@ -38,6 +23,22 @@ logo = """
         @        @     @  @     @     @     @ @ @ @  @     @
    °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 """
+
+
+attemps = 0
+
+while attemps < 100:
+    username = input('Enter your username: ')
+    password = input('Enter your password: ')
+
+    if username == 'n0l' and password == 'n0l':
+        print('You have successfully logged in Welcome to BLACKPANTHER!!')
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue
+
 
 ip = str(input(" Target IP :"))
 port = int(input(" Target Port :"))

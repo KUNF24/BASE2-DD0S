@@ -15,8 +15,8 @@ while attemps < 100:
     username = input('Enter your username: ')
     password = input('Enter your password: ')
 
-    if username == 'NUDOS' and password == 'NUDOS':
-        print('You have successfully logged in Welcome to NUDOS!!')
+    if username == 'n0l' and password == 'n0l':
+        print('You have successfully logged in Welcome to BLACKPANTHER!!')
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')

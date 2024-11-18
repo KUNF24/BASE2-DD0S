@@ -43,8 +43,8 @@ print("")
 print("\033[94m_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—\033[0m")
 print("\033[94m                                                                ||\033[0m")
 while attemps < 100:
-    username = input('Enter your username: ')
-    password = input('Enter your password: ')
+    username = input('\033[33mEnter your username: \033[0m')
+    password = input('\033[94mEnter your password: \033[0m')
 
     if username == 'n0lk0ma' and password == 'n0lk0ma':
         print('You have successfully logged in Welcome to BLACKPANTHER!!')
@@ -85,7 +85,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +  "\033[31mStart Attack ::.." +ip+ " \033[0m")
+			print(i +  "\033[31mStart Attack :::..." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[+] Error!")
@@ -101,7 +101,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +  "\033[92mStatus Sent :::..." +ip+ " \033[0m")
+			print(i +  "\033[92mStatus Sent ::::..." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[*] Error!")

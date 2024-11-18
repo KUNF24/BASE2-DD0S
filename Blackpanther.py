@@ -8,7 +8,11 @@ import sys
 import time
 import fade
 os.system("clear")
-logo = """
+
+attemps = 0
+os.system("clear")
+       logo = """
+       
         @ @ @ @ @    @     @ @ @ @ @ @ @    @ @ @  @       @
         @         @  @      @         @   @        @     @
         @         @  @       @       @   @         @   @

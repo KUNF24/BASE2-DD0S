@@ -39,8 +39,9 @@ print("\033[91m        @ @ @      @ @    @     @  @ @ @ @  @ @ @ @  @ @ @    \03
 print("\033[91m              @  @     @  @ @   @     @     @        @     @  \033[0m")
 print("\033[93m        @ @ @    @ @ @ @  @   @ @     @     @ @ @    @ @ @    \033[0m")
 print("\033[93m        @        @     @  @     @     @     @ @ @ @  @     @  \033[0m")
-print("\033[94m°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\033[0m")
-
+print("")
+print("\033[94m_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—\033[0m")
+print("\033[94m                                                                ||\033[0m")
 while attemps < 100:
     username = input('Enter your username: ')
     password = input('Enter your password: ')
@@ -133,6 +134,7 @@ for y in range(threads):
 else:
 		th = threading.Thread(target = run4)
 		th.start()
+
 
 
      

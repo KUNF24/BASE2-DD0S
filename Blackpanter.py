@@ -7,10 +7,6 @@ import os
 import fade
 os.system("git pull")
 os.system("")
-print "starting in 5 seconds....."
-time.sleep(5)
-
-os.system("clear")
 logo =  """
         @ @ @ @ @    @     @ @ @ @ @ @ @    @ @ @  @       @
         @         @  @      @         @   @        @     @
@@ -26,7 +22,8 @@ logo =  """
         @        @     @  @     @     @     @ @ @ @  @     @
    °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 """
-
+print "starting in 5 seconds....."
+time.sleep(5
 
 def usage():
 	os.system()

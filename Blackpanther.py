@@ -9,9 +9,25 @@ import time
 import fade
 os.system("clear")
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    ZA1 = '\033[31m'
+    ZA2 = '\033[32m'
+    ZA3 = '\033[33m'
+    FAIL = '\033[91m'
+    RESET = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    ZH = '\033[97m'
+
+
 attemps = 0
 os.system("clear")
-       logo = """
+print("")
        
         @ @ @ @ @    @     @ @ @ @ @ @ @    @ @ @  @       @
         @         @  @      @         @   @        @     @
@@ -26,7 +42,7 @@ os.system("clear")
         @ @ @    @ @ @ @  @   @ @     @     @ @ @    @ @ @
         @        @     @  @     @     @     @ @ @ @  @     @
    °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-"""
+
 while attemps < 100:
     username = input('Enter your username: ')
     password = input('Enter your password: ')

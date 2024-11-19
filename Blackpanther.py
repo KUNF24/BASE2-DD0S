@@ -35,10 +35,10 @@ print("\033[31m        @         @  @         @   @     @         @   @      \03
 print("\033[94m        @         @  @          @ @       @        @     @    \033[0m")
 print("\033[94m        @ @ @ @ @    @ @ @ @ @   @          @ @ @  @       @  \033[0m")
 print("")     
-print("\033[91m     @ @ @     @ @   @     @ @ @ @ @ @     @  @ @ @   @ @ @    \033[0m")
-print("\033[91m           @ @     @ @ @   @    @    @     @  @       @     @  \033[0m")
-print("\033[93m     @ @ @   @ @ @ @ @   @ @    @    @ @ @ @  @ @ @   @ @ @    \033[0m")
-print("\033[93m     @       @     @ @     @    @    @     @  @ @ @   @     @  \033[0m")
+print("\033[91m      @ @ @      @ @   @     @ @ @ @ @ @     @  @ @ @  @ @ @    \033[0m")
+print("\033[91m            @  @     @ @ @   @    @    @     @  @      @     @  \033[0m")
+print("\033[93m      @ @ @    @ @ @ @ @   @ @    @    @ @ @ @  @ @ @  @ @ @    \033[0m")
+print("\033[93m      @        @     @ @     @    @    @     @  @ @ @  @     @  \033[0m")
 print("")
 print("\033[94m_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—__\033[0m")
 print("\033[95m             SHOULD ONLY BE USED FOR GOOD PURPOSES                      \033[0m")
@@ -96,7 +96,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("\033[95m[\033[97m+\033[95m]   \033[94mStart Attack :::..." +ip+ " \033[0m")
+			print("\033[96m[\033[91m+\033[96m]   \033[97mStart Attack :::..." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("\033[33m[\033[95m!\033[33m] Error!")
@@ -112,10 +112,10 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("\033[95m[\033[97m!\033[95m]   \033[92mStatus Sent ::::..." +ip+ " \033[0m")
+			print("\033[31m[\033[32m!\033[31m]   \033[92mStatus Sent ::::..." +ip+ " \033[0m")
 		except:
 			s.close()
-			print("\033[33m[\033[95m!\033[33m] Error!")
+			print("\033[93m[\033[95m!\033[93m] Error!")
             
   
 def run4():
@@ -128,7 +128,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("\033[95m[\033[97m+\033[95m]  \033[91mRequest Sent :::..  " +ip+ " \033[0m")
+			print("\033[94m[\033[91m+\033[94m]  \033[33mRequest Sent :::..  " +ip+ " \033[0m")
 		except:
 			s.close()
 			print("\033[33m[\033[95m!\033[33m] Error!")

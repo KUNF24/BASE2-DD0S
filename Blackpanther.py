@@ -58,7 +58,6 @@ while attemps < 100:
 
 ip = str(input("\033[94mTarget IP :  \033[0m"))
 port = int(input("\033[97mTarget Port :  \033[0m"))
-choice = str(input("\033[31m(y/n) :  \033[0m"))
 times = int(input("\033[96mTime : \033[0m"))
 threads = int(input("\033[92mThreads :  \033[0m"))
 time.sleep(5),

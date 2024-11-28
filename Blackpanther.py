@@ -132,25 +132,3 @@ def run4():
 			s.close()
 			print("\033[33m[\033[95m!\033[33m] Error!")
 											
-numbers = [1,2,3,4]
-
-def s(purchases):
-    total = sum(numbers)
-    return total
-
-
-total_numbers = s(numbers)
-print(total_numbers)            
-                th = threading.Thread(target = run)
-		th.start()
-		th = threading.Thread(target = run2)
-		th.start()
-		th = threading.Thread(target = run3)
-		th.start()
-else:
-		th = threading.Thread(target = run4)
-		th.start()
-
-
-
-     

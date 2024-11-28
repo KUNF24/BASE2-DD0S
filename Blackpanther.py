@@ -82,7 +82,7 @@ choice = str(input(" (y/n) :"))
 times = int(input(" Time :"))
 threads = int(input(" Threads :"))
 def run():
-	data = random._urandom(1024)
+	data = random._urandom(1490)
 	i = random.choice(("[+]"))
 	while True:
 		try:

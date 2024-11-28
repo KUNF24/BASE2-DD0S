@@ -134,8 +134,7 @@ def run4():
 											
             
 for y in range(threads):
-	if choice == 'y':
-		th = threading.Thread(target = run)
+                th = threading.Thread(target = run)
 		th.start()
 		th = threading.Thread(target = run2)
 		th.start()

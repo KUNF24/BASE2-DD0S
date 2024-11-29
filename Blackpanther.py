@@ -90,7 +90,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print("\033[91m[+\033[91m] \033[33mה-TCP שלך מאוים \033[0m "),
 		except:
 			s.close()
 			print("[*] Error!!!")

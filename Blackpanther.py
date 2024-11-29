@@ -97,7 +97,7 @@ def run():
 while run:
 
     clock.tick(2)
-	 data = random._urandom(20000)
+	 data = random._urandom(1044)
          i = random.choice(("[+]"))
          while True:
 		 try:

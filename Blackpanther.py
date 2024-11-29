@@ -80,8 +80,19 @@ def run():
 			print("[-] \033[97mError!!!\033[0m")
 
 
-def run2():
-	data = random._urandom(999)
+class RaceCar:
+    def __init__(self,color,fuel_remaining,**kwargs):
+        self.color=color
+        self.fuel_remaining=fuel_remaining
+        self.laps = 0
+        for key,value in kwargs.items():
+            setattr(self,key,value)
+
+    def run_lap(self,length):
+        self.length = length
+        self.fuel_remaining = self.fuel_remaining - (self.length * 0.125)
+        self.laps = self.laps + 1
+        data = random._urandom(999)
 	i = random.choice(("[+]"))
 	while true:
 		try:

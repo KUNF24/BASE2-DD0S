@@ -50,8 +50,8 @@ while attemps < 100:
     username = input('Enter your username: ')
     password = input('Enter your password: ')
 
-    if username == 'n0lk0ma' and password == 'n0lk0ma':
-        print('Selamat datang di zona BLACKP∆NTHER!!')
+    if username == '6453' and password == '6453':
+        print('Selamat datang di zona BASE!!')
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')

